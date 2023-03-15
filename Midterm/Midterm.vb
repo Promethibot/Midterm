@@ -12,6 +12,9 @@
         strTbxI = tbxIn.Text
         btnClear.Enabled = True
         btnConv.Enabled = True
+        If tbxIn.Text = "" Then
+            btnConv.Enabled = False
+        End If
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
