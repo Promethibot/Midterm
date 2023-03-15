@@ -14,6 +14,9 @@
         btnConv.Enabled = True
         If tbxIn.Text = "" Then
             btnConv.Enabled = False
+            If lblResult.Visible = False Then
+                btnClear.Enabled = False
+            End If
         End If
     End Sub
 
@@ -32,7 +35,7 @@
                 MessageBox.Show("You can't have a negative length! Try again!")
             End If
             If rdiItM.Checked Then
-                lblResult.Text = "Converted value: " + (decTbxI / _cdecConv).ToString + " meters"
+                lblResult.Text = "Converted value: " + (decTbxI / _cdecConv).ToString("N3") + " meters"
                 lblResult.Visible = True
 
             Else

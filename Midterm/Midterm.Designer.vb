@@ -159,7 +159,7 @@ Partial Class Midterm
         Me.lblInst2.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(178, Byte), Integer))
         Me.lblInst2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblInst2.ForeColor = System.Drawing.Color.White
-        Me.lblInst2.Location = New System.Drawing.Point(375, 178)
+        Me.lblInst2.Location = New System.Drawing.Point(375, 179)
         Me.lblInst2.Name = "lblInst2"
         Me.lblInst2.Size = New System.Drawing.Size(145, 19)
         Me.lblInst2.TabIndex = 9
@@ -178,7 +178,7 @@ Partial Class Midterm
         '
         Me.lblResult.AutoSize = True
         Me.lblResult.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblResult.Location = New System.Drawing.Point(368, 312)
+        Me.lblResult.Location = New System.Drawing.Point(376, 302)
         Me.lblResult.Name = "lblResult"
         Me.lblResult.Size = New System.Drawing.Size(128, 18)
         Me.lblResult.TabIndex = 11
