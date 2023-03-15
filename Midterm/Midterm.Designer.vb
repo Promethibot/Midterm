@@ -34,6 +34,7 @@ Partial Class Midterm
         Me.rdiMtI = New System.Windows.Forms.RadioButton()
         Me.lblInst2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.lblResult2 = New System.Windows.Forms.Label()
         Me.lblResult = New System.Windows.Forms.Label()
         CType(Me.picBuilding, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,7 +64,7 @@ Partial Class Midterm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(364, 103)
+        Me.Label1.Location = New System.Drawing.Point(364, 105)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(172, 19)
         Me.Label1.TabIndex = 2
@@ -116,11 +117,11 @@ Partial Class Midterm
         '
         Me.tbxIn.BackColor = System.Drawing.Color.White
         Me.tbxIn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.tbxIn.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxIn.ForeColor = System.Drawing.Color.Black
+        Me.tbxIn.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxIn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(178, Byte), Integer))
         Me.tbxIn.Location = New System.Drawing.Point(542, 101)
         Me.tbxIn.Name = "tbxIn"
-        Me.tbxIn.Size = New System.Drawing.Size(182, 26)
+        Me.tbxIn.Size = New System.Drawing.Size(182, 30)
         Me.tbxIn.TabIndex = 6
         '
         'rdiItM
@@ -174,15 +175,27 @@ Partial Class Midterm
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
         '
+        'lblResult2
+        '
+        Me.lblResult2.AutoSize = True
+        Me.lblResult2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblResult2.Location = New System.Drawing.Point(369, 302)
+        Me.lblResult2.Name = "lblResult2"
+        Me.lblResult2.Size = New System.Drawing.Size(178, 24)
+        Me.lblResult2.TabIndex = 11
+        Me.lblResult2.Text = "Converted value: "
+        Me.lblResult2.Visible = False
+        '
         'lblResult
         '
         Me.lblResult.AutoSize = True
-        Me.lblResult.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblResult.Location = New System.Drawing.Point(376, 302)
+        Me.lblResult.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblResult.ForeColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(178, Byte), Integer))
+        Me.lblResult.Location = New System.Drawing.Point(538, 302)
         Me.lblResult.Name = "lblResult"
-        Me.lblResult.Size = New System.Drawing.Size(128, 18)
-        Me.lblResult.TabIndex = 11
-        Me.lblResult.Text = "Converted value: "
+        Me.lblResult.Size = New System.Drawing.Size(65, 24)
+        Me.lblResult.TabIndex = 12
+        Me.lblResult.Text = "value"
         Me.lblResult.Visible = False
         '
         'Midterm
@@ -192,6 +205,7 @@ Partial Class Midterm
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(804, 401)
         Me.Controls.Add(Me.lblResult)
+        Me.Controls.Add(Me.lblResult2)
         Me.Controls.Add(Me.lblInst2)
         Me.Controls.Add(Me.rdiMtI)
         Me.Controls.Add(Me.rdiItM)
@@ -225,5 +239,6 @@ Partial Class Midterm
     Friend WithEvents rdiMtI As RadioButton
     Friend WithEvents lblInst2 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents lblResult2 As Label
     Friend WithEvents lblResult As Label
 End Class

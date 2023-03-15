@@ -23,6 +23,7 @@
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         tbxIn.Text = ""
         lblResult.Visible = False
+        lblResult2.Visible = False
         btnClear.Enabled = False
         btnConv.Enabled = False
         rdiItM.PerformClick()
@@ -35,12 +36,14 @@
                 MessageBox.Show("You can't have a negative length! Try again!")
             End If
             If rdiItM.Checked Then
-                lblResult.Text = "Converted value: " + (decTbxI / _cdecConv).ToString("N3") + " meters"
+                lblResult.Text = (decTbxI / _cdecConv).ToString("N3") + " meters"
                 lblResult.Visible = True
+                lblResult2.Visible = True
 
             Else
-                lblResult.Text = "Converted value: " + (decTbxI * _cdecConv).ToString + " inches"
+                lblResult.Text = (decTbxI * _cdecConv).ToString + " inches"
                 lblResult.Visible = True
+                lblResult2.Visible = True
             End If
         Else
             MessageBox.Show("That doesn't look like a number!")
@@ -50,4 +53,5 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnClear.PerformClick()
     End Sub
+
 End Class
